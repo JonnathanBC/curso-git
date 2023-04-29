@@ -1,0 +1,48 @@
+!!! Git !!!.- Es un control de veriones para poder trabajar en base al mismo código diff desarrolladores donde podemos tener un mejor versionado y un código más controlado, nos permite también realizar acciones que podamos regresar el código anterior, mirar los cambios en nuestro código.
+
+  ! CONFIGURACIONES !.- git config --global este -- global es porque estamos config git a todas las carpetas de nuestro sistema y para todo el SO. Aunque también podemos tener config a nivel de repositorios o proyectos.
+
+    1.- Abrir una terminal de comandos.
+    2.- Lanzamos:
+      git config --global user.name "name_user". Este nombre saldran cuando hacemos algun cambio o commit.
+    3.- Lanzamos :
+      git config --global user.email "email_user".
+
+    4.- Lanzamos:
+      git config --global user.ui true.
+      Esto activa los colores en la terminal.
+
+    5.- git config --list
+
+    #asignar a vsc como editor de conf de git
+    6.- git config --global core.editor "code --wait". Siempre en vsc se abrira el archivo de confg global o a nivel de proyectos. Puede ser cualquier editor de codigo como atom, php storm etc etc solo cambiamos el code por el nombre del editor de código.
+
+    7.- git config --global -e.
+    Cons esto abrimos la config de git en el vsc o editor donde le hayamos editador.
+
+    # Para estandarizar los saltos de linea en windows
+    git config --global core.autocrlf true
+
+    # Para estandarizar los saltos de linux en linux y mac
+    git config --global core.autocrlf input
+
+    # ver todas las opciones de la cong en la terminal
+    git config -h
+
+    # ver todas las opciones de la config en el navegador
+    git help config
+
+  ! INICIAR GIT EN UN DIRECTORIO LOCAL !.- 
+    1.- Abrir una terminal.
+    2.- Creamos una carpeta donde deseemos:
+      mkdir name_folder
+
+    3.- Debemos crear un gitignore que nos sirve para que los archivos que no queremos que se suban al repositorio, dentro de este archivo debemos de colocar las rutas dentro del archivo
+      touch .gitignore
+
+    4.- Lanzamos git init.
+    Este comando sirve para inicializar git en un proyecto. En este carpeta cualquier cambio que yo haga aqui git va a poder trackear con los comandos de git.
+
+    5.- Opcional el code ., esto es para que abra en vsc la carpeta que hemos creado.
+
+  ! !.  
