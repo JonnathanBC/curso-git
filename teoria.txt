@@ -45,4 +45,28 @@
 
     5.- Opcional el code ., esto es para que abra en vsc la carpeta que hemos creado.
 
-  ! !.  
+  ! FLUJO BASICO !. Tenemos 4 estados, estado son los pasos por los cuales va pasando nuestro código, 3 de estos estados suceden en nuestras máquinas osea son estados locales, y el último en la plataforma donde estamos subiendo nuestro código sea github, gitlab etc.
+
+    1) Modified.- Cuando estamos moficando nuesteo código. Este sucede en el directorio de trabajo
+
+    2) Stage.- Cuando el código pasa a estar traqueado por git. 
+    Para pasar del Working Directory al stage hay estos comandos:
+      - git add . este primero añade todos los archivos que hemos modifcado.
+
+      - git add nombre_file
+    Aun estando en el stage podemos rechazar algunos cambios, esta es una zona donde estaremos trabajando usualmente
+
+    3) Commit.- Ya cuando en la cabeza del repo de git tiene los cambios, es decir, estar al dia localmente.
+    Para pasar del Stage al Commit hay el sig comando:
+      - git commit -m "Message commit".
+      Esto sirve para registra en el historico de nuestro proyecto, pasamos del stage a la cabeza del repo local en git. 
+
+    4) Remote.- Cuando subimos el código al guna plataforma.
+    Para pasar de commited al remote existe los sig comandos:
+      - git push.- Para poder subir los cambios que hemoshecho al repositorio en remote.
+
+      - git push -u origin name_branch.- Este es igual que el anterior si no que el -u lo que hace es enviar la rama al repo rmeoto si no hemos hecho al subida de la rama manual.
+
+  Por ejm si un compañero realizo un cambio en nuestro código y lo subio a repo remoto, lo más recomnedable y lo que siempre se debe de hacer es descrgar los cambios, siempre como buena práctica, antes de empezar a trabajar o desarrollar es es descrgar los cambios del remoto al local.
+  Esto lo podemos hacer con el comando:
+    - git pull
