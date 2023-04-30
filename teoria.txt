@@ -108,3 +108,23 @@
 
     - git push origin -delete master
     Esto elimina la rama master del reposritorio.
+
+  ! GIT IGNORE !.- NOs sirve para poder ingnorar archivos que no queremos que se suban al remoto, podrían ser archivos de claves, llaves, apis etc etc. Necesitamos crear en la raiz de nuestro poryecto un archivo que se llame .gitignore y aqui podemos colocar los archivos que deseamos siendo slash(/) la raíz de nuestro proyecto ejm:
+  
+  .gitignore
+  # Esto es un comentario
+  archivo.net
+  carpeta
+  /archivo_desde_raiz.ext
+
+  #ignora todos los archivos que terminen el log, el asterisco lo que hace es funcionar como una expresio regular donde le colocamos el asterico y dice todos los archivos que...
+    *.log x ejm este indica que todos los archivos .log se ignoren
+
+  # ! este simbolo lo que nos indica excepto, es decir, ignora otros excepto este ejm:
+    !production.log excepto el achivo production.log.
+
+  doc/*.text.- esta forma indica que ignore todos los archivo terminados en .txt dentro de la carpeta doc pero no es subscarpetas.
+
+  doc/**/*.txt.- Ignorar todos los archivos terminados en .txt dentro la carpeta doc y tambien en sus subcarpeta.
+
+  Existe una página llama gitignore.io, donde aqui le pasamos la tecnologia que estamos usando como node, php, react etc etc y nos devuelve un archivo con todos lo que se puede ignorar.
