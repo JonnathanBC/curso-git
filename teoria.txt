@@ -128,3 +128,52 @@
   doc/**/*.txt.- Ignorar todos los archivos terminados en .txt dentro la carpeta doc y tambien en sus subcarpeta.
 
   Existe una página llama gitignore.io, donde aqui le pasamos la tecnologia que estamos usando como node, php, react etc etc y nos devuelve un archivo con todos lo que se puede ignorar.
+
+  ! RAMAS !.- Las ramas nos permiten aislar funcionalidades de nuestro  en nuestro código, es como tener pequeas versiones de nuestro código.
+
+  Comandos de ramas:
+  - git branch name_branch
+  Esto crea una rama.
+
+  - git checkout name_branch
+  Esto me cambiar a la rama que le paso el nombre desde donde estamos.
+
+  * git checkout -b rama
+  Esta crea una rama y me la cambia automatocamente a ella.
+
+  - git branch -d name_branch
+  Me Elimina la rama que le pasamos el nombre a nivel local.
+
+  - git branch -D name_branch
+  Elimina la rama pero forzado. anivel local
+
+  - git push origin --delete name_branch- Esto elimina las ramas en remoto.
+
+  - git branch
+  Lista las ramas del repositorio.
+
+  - git branch --no-merged
+  Lista las ramas no fusionadas a la rama actual.
+
+  - git branch --merged
+  Lista las ramas fusionadas a la rama actual.
+
+  ---- Rebasar ramas ----
+  Para rebsar las ramas debemos de primero hacer un checkout a la rama donde queremos hacer el rebae, luego tenemos que hacer el rebase a la rama principal o a la rama de donde vinimos, es decir tenemos user y main, estando en main podemos nosotros pasarnos a user con el ckeckout y luego aqui en el user hacer el rebase de la rama principal osea la main. commands:
+
+  git checkout secondary-brach
+  git rebase main-branch
+
+    En los rebaes es importante darnos cuenta desde donde creamos nestras ramas, porque por ejm en una rama llamada user creamos la funcinoalidad del login, y noisotros estando en la rama del usuario creamos una nueva rama llamada login, esta rama nueva login tendra todo lo que tiene user incluyendo los archivos que hayamos enviado en ese momento, es decir, nosotros desde donde creamos la rama desde ahi tendra todos los archivos que creemos en la rama desde dinde creamos la nueva rama. Es decir la rama nueva que creamos toma la referencia de la rama desde donde la creamos.
+
+! Fusiones (Merge) !.- Cuando hacemos las fuciones de ramas nos puede dar 2 tipos de salidad:
+    1) Fast-Forwad.- La fusión se hace automática, es decir, no hay conflictos que resolver.
+
+    2) Manual-merge.- La fusión hay que hacerla manual, para resolver conflictos de duplicación de contenido.
+
+ Para fusionar lo que debemos de hacer es:
+    1) Situarnos en la rama que se quedará con el contemido fusionado
+        git checkout nombre_rama_que_quedara_con_todo_contenido
+    2) Fucionarla.
+        git merge nombre_rama_que_tiene_los_cambios_a_pasar
+    3) Gacer un git push -u origin main para enviar los cambios.
