@@ -70,3 +70,41 @@
   Por ejm si un compañero realizo un cambio en nuestro código y lo subio a repo remoto, lo más recomnedable y lo que siempre se debe de hacer es descrgar los cambios, siempre como buena práctica, antes de empezar a trabajar o desarrollar es es descrgar los cambios del remoto al local.
   Esto lo podemos hacer con el comando:
     - git pull
+
+  ! COMANDOS DE GIT !.-
+    - git add . .- Añade todos los archivos modificados.
+    - git add name_file.- Añade solo el archivo o carpeta que le pasemos como parametro.
+
+    - git commit -m "Message".- Sirve para hacer el commit de los cambios.
+
+    - git remote add origin url_git_repo.- Este nos permote a nosotros poder vincular el repositorio remoto con nuestro código en git. Así podremos realizar las acciones de push hacia el remoto.
+
+    - git branch -M name_new_branch.- Este comando nos permite a nosotros cmabiar el nombre de nuestra rama, por defecto viene master, podemos cambiarle al nombre que se usa actualmente main quedaría :
+      - git branch -M main
+
+    - git push -u origin name_branch.- Este se usa casi siempre una vez por cada rama que nosotros creamos es decir i tenemos una rama en git que se llame users, esta rama esta a nivel local, enotonces nosotros debemos de enviar esa rama también al remoto para que sepa de donde vino ese código, entonces si no lo hacemos manualemente lanzamos el comando git push -u origin users x ejm.
+
+    - git push.- Empuja los cambios al repo remoto.
+
+    - git status
+    Me indica el estado del los archivos mmodificados.
+
+    - git log.- Me indica el commit anterior hecho hacia el remoto.
+
+    - git pull.- Este nos permite obtener todos los cmabios que tenemos en el remoto hacia el local. Como buena oráctica debemos de siempre lanzar este comando para poder descragar los cmabios que estén hecho de nuestro equipo de desarrolo siempre siempre.
+
+    Pasos para cambiar la rama master a main una vez hecho algun tipo de push al remoto:
+
+    - git branch -m master main
+      Crea la rama main y pasa el historial de la rama master a main.
+
+    - git push -u origin main
+
+    - git symbolic-ref refs/remotes/origin/HEAD refs/remotes/origin/main
+    Este comando cambia el HEAD actual a la rama main.
+
+    - Cambiar la rama default de master a main en tu repo de Git. 
+    Entramos a github, vamos a settings del repositorio, Entramos a Settings/Branches buscamos un item que diga Default branch y ahi podemos intercambiar la rama a main para que sea la principal en nuestro repo. 
+
+    - git push origin -delete master
+    Esto elimina la rama master del reposritorio.
