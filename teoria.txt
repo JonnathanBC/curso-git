@@ -328,3 +328,21 @@ git tag -a "v1.0.0" -m "Mensaje de la etiqueta"
 git push -tags
 
 Una etiqueta no es más que un commit nuevo
+
+! GITHUB PAGES !.- Es una rama especial, que nos ofrece github, que cuando nosotos nos creamos una rama llamada gh-pages, será una rama que nos va a permitir tener una versión como si fuera sitio web de nuestro proyecto aojado directamente.
+
+Comunmente cuando creamos un repositorio la ruta de nuestro repositorio es:
+- https://github.com/usuario/repositorio
+pero cuando creamos está rama especial la url va a cambiar:
+- https://usuario.github.io/repositorio
+
+Pasos:
+1) git branch gh-pages
+2) git checkout gh-pages
+3) git remote add origin https://github.com/usuario/repositorio.git
+4) git push origin gh-pages
+
+# para descragar los cambios del repositorio remoto al local
+git pull origin gh-pages
+
+Cabe recalcar que las subdas de proyectos tienen que ser puro frontend.
