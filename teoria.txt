@@ -204,3 +204,39 @@
 
     La mejor manera de manejar este amend, es cuando nosotros no hayamos hecho el push al remoto, es decir cuando hacemos el commit que este permanece en local.
     Cuando nosotros ya hemos hecho un push lo mas recomendable es mejor crear otro commit y un nuevo push sin el amend porque si no da conflictos siempre porque estamos intentando modificar un commit ya existente en remoto. El amend se usa siemore cuando los cambios los tenemos en local.
+
+  ! REGISTRO DEL HISTORIAL !.-  x ejm =>
+
+
+  # nos permite conocer todo elhistorial de un proyecto, con la información de la fecha el autor y id de cada cambio.
+  - git log
+
+  # Muestra en una sola línea por cambio.
+  git log --oneline
+
+  # guarda el log en la ruta y archivo que especifiquemos.
+  git log > commits.txt
+
+  # Muestra el historial con el formato que indiquemos.
+  git log --pretty=format:"%h - %an, %ar : %s"
+
+  # cambiamos la n por cualquier número entero y mostrará los n cambios recientes.
+  git log -n
+
+  # muestra los cambios realizados antes de la fecha especificada.
+  git log --before="2019-07-08 00:00:00"
+
+  # muestra los cambios realizados despúes de la fecha especificada.
+  git log --after="2019-07-08 00:00:00"
+
+  # muestra los cambios realizados en el rango de la fecha especificada.
+  git log --after="2019-07-08 00:00:00" --before="2019-07-08 00:00:00"
+
+  # Muestra todo el registro de acciones del log, incluyendo inserciones, cambios, eliminaciones, fusiones etc.
+  git reflog
+
+  # Diff entre el working directory y el staging area
+  git diff
+
+  # Muestra todo ramas, fusiones commits etc pero con los graficos parecido github.
+  git log --oneline --graph --all

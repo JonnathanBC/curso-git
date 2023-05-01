@@ -1,0 +1,98 @@
+commit a1e9132b7e8b59034ef59ce381b73d0e945cf11f
+Author: Jonnathan Baculima <jonnabcl56@gmail.com>
+Date:   Mon May 1 11:42:46 2023 -0500
+
+    Agregando 3 párrafos
+
+commit 117764a785ac1af7131171b81bfab42124610e9f
+Merge: 9361068 e73005e
+Author: Jonnathan Baculima <jonnabcl56@gmail.com>
+Date:   Mon May 1 11:38:39 2023 -0500
+
+    Agregando las estaciones del año con fecha de inicio
+
+commit 936106809079e494bcd0f3fc8b94d0765477dafa
+Author: Jonnathan Baculima <jonnabcl56@gmail.com>
+Date:   Mon May 1 11:09:45 2023 -0500
+
+    Agregando estaciones del año con fecha de inicio
+
+commit e73005e10ae31801314b7033ad4f9bf5e76d7221
+Author: Jonnathan Baculima <jonnabcl56@gmail.com>
+Date:   Mon May 1 11:09:45 2023 -0500
+
+    Agregando estaciones del año
+
+commit 75973375293fc79a027f312ceac2c3f375e41a11
+Merge: 1e01f09 ac0a82c
+Author: Jonnathan Baculima <jonnabcl56@gmail.com>
+Date:   Sun Apr 30 13:55:25 2023 -0500
+
+    Resolviendo conflicto merge main html en el docuemnto index.html
+
+commit ac0a82cf119a51845ad0ee8e5ed14a5f9dcd8f20
+Author: Jonnathan Baculima <jonnabcl56@gmail.com>
+Date:   Sun Apr 30 13:48:43 2023 -0500
+
+    added new ol line
+
+commit ab352790f0dbc577f4045b066cae144f8cd8614e
+Author: Jonnathan Baculima <jonnabcl56@gmail.com>
+Date:   Sun Apr 30 13:47:07 2023 -0500
+
+    Agreandi index.js al index.html
+
+commit 1e01f0975ab039dbcd744cb418e0f2716d00f7f8
+Author: Jonnathan Baculima <jonnabcl56@gmail.com>
+Date:   Sun Apr 30 13:44:16 2023 -0500
+
+    Añadiendo el style.css al index.html
+
+commit a97cfebd379aad2f9a6409f420f6a591539ed3fa
+Merge: d82a80a c39baf1
+Author: Jonnathan Baculima <jonnabcl56@gmail.com>
+Date:   Sun Apr 30 13:23:30 2023 -0500
+
+    Merge branch 'js'
+
+commit c39baf1889c97702e299524a67d8b2674867bcc7
+Author: Jonnathan Baculima <jonnabcl56@gmail.com>
+Date:   Sun Apr 30 12:51:19 2023 -0500
+
+    Creando index.js
+
+commit d82a80af18048bd86797bdce1fa9b2a856185cab
+Author: Jonnathan Baculima <jonnabcl56@gmail.com>
+Date:   Sun Apr 30 12:44:56 2023 -0500
+
+    Added style.css file
+
+commit 5db6a14eeb7911cbf8879e0f5e6572f42411cc7c
+Author: Jonnathan Baculima <jonnabcl56@gmail.com>
+Date:   Sun Apr 30 12:40:09 2023 -0500
+
+    Creando archivo htmindex.html
+
+commit 6940a654a2937642a9d8f314515280772370b860
+Author: Jonnathan Baculima <jonnabcl56@gmail.com>
+Date:   Sun Apr 30 12:17:57 2023 -0500
+
+    Ignorando archivos .exe
+
+commit 6efdb29393876e40c6fe28a37647072e7c9e5b22
+Author: Jonnathan Baculima <jonnabcl56@gmail.com>
+Date:   Sun Apr 30 12:06:26 2023 -0500
+
+    Git commands
+
+commit 02308a0db5ffad37a11cafa322bc2e7840d4c6f0
+Author: Jonnathan Baculima <jonnabcl56@gmail.com>
+Date:   Sat Apr 29 13:24:02 2023 -0500
+
+    Basic git flow
+
+commit 6df3e52402f6995c45c3afecf7b4f783b77cf591
+Author: Jonnathan Baculima <jonnabcl56@gmail.com>
+Date:   Sat Apr 29 19:47:35 2023 +0200
+
+    Initial global confg git  + init git in a project

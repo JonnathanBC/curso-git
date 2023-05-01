@@ -1,0 +1,24 @@
+* 1a9b3be Registro del historial
+* a1e9132 Agregando 3 párrafos
+*   117764a Agregando las estaciones del año con fecha de inicio
+|\  
+| * e73005e Agregando estaciones del año
+* | 9361068 Agregando estaciones del año con fecha de inicio
+|/  
+*   7597337 Resolviendo conflicto merge main html en el docuemnto index.html
+|\  
+| * ac0a82c added new ol line
+| * ab35279 Agreandi index.js al index.html
+* | 1e01f09 Añadiendo el style.css al index.html
+* |   a97cfeb Merge branch 'js'
+|\ \  
+| * | c39baf1 Creando index.js
+* | | d82a80a Added style.css file
+| |/  
+|/|   
+* | 5db6a14 Creando archivo htmindex.html
+|/  
+* 6940a65 Ignorando archivos .exe
+* 6efdb29 Git commands
+* 02308a0 Basic git flow
+* 6df3e52 Initial global confg git  + init git in a project
