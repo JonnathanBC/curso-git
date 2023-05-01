@@ -89,7 +89,9 @@
     - git status
     Me indica el estado del los archivos mmodificados.
 
-    - git log.- Me indica el commit anterior hecho hacia el remoto.
+    - git log.- Me indica el commit anterior hecho hacia el remoto. Nos muestra el historial de todos los commits que tiene el repositorio.
+
+    - git log --oneline.- Este comando nos muestra igual que el log pero linea por line, es decir en una linea un commit, en otra otro etc etc.
 
     - git pull.- Este nos permite obtener todos los cmabios que tenemos en el remoto hacia el local. Como buena oráctica debemos de siempre lanzar este comando para poder descragar los cmabios que estén hecho de nuestro equipo de desarrolo siempre siempre.
 
@@ -177,3 +179,14 @@
     2) Fucionarla.
         git merge nombre_rama_que_tiene_los_cambios_a_pasar
     3) Gacer un git push -u origin main para enviar los cambios.
+
+  ! Agregar un cambi más al último commit !.- Esto nos sirve en el caso que nosotros nos hayamos olvidado un línea de código en el último commit, y es común que hagamos un nuevo commit siempre que queremos hacer esto, pero existe un comando que nos permite agregar algo más de código al último commit sin necesidad de hacer otro commit ejm => :
+
+  - git commit --amend --no-edit.
+  Este comando edita el contenido pero no edita el mensaje del último commit.
+
+  - git commit --amend -m "new_message".
+  Este en cambio es para editar el contenido y el msg.
+
+  - git reset --hard HEAD~1.- Este regresa al último commit que se haya dado si queremos descratar los cambios.
+
