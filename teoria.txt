@@ -275,3 +275,22 @@ git reset --hard id-commit
 - mv ~/saved_git_config .git/config
 - git push --force origin main
 
+! REMOTOS !.- Es esa refrencia que va a apiuntar al repositorio en la nube al que se está centralizando todo el contenido. Comandos:
+
+# muestra los origenes remotos del repo.
+git remote
+
+# muestra los origenes remotos con detalle
+git remote -va
+
+# agregar un origen remoto
+git remote add nombre-origen https://github.com/usuario/repositorio.git
+
+# renombrar un origen remoto
+git remote rename nombre.viejo nombre-nuevo
+
+# eliminar un origen remoto
+git remote remove nombre-origen
+
+# descargar una rama remota a local diferente a la principal
+git checkout --track -b rama-remota origin/rama-remota
