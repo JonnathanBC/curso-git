@@ -294,3 +294,37 @@ git remote remove nombre-origen
 
 # descargar una rama remota a local diferente a la principal
 git checkout --track -b rama-remota origin/rama-remota
+
+! ETIQUETAS !.- Este nos va a permitir asignar un número de versión, esa nomeclatura (v1.0.0) tiene que ver con versionado semántico
+ejm v1.2.3
+
+- el primero número (1) hace referencia a la VERSIÓN MAYOR, osea, cuando realizamos un cambio donde quizá sea incopatible con las versiones anteriores.
+
+- el 2do número, VERSION MENOR cuando se añadefuncionalidad compatible con versiones anteriores
+
+- 3er número VERSION PARCHE, cuando reparamos errores compatibles con versiones anteriores.
+
+# listar etiquetas
+git tag
+
+# crea una etiqueta
+git tag numero-version
+
+# eliminar una etiqueta
+git tag -d numero-etiqueta
+
+# mostra información de una etiqueta.
+git show numero-etiqueta
+
+# sincronizando la etiqueta del repositrorio local al remoto
+git add .
+git tag v1.0.0
+git commit -m "v1.0.0"
+git push origin numero-version
+
+# generando una etiqueta anotada (con mesaje de commit)
+git add .
+git tag -a "v1.0.0" -m "Mensaje de la etiqueta"
+git push -tags
+
+Una etiqueta no es más que un commit nuevo
