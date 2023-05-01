@@ -13,6 +13,8 @@
       Esto activa los colores en la terminal.
 
     5.- git config --list
+    6.- git config pull.rebase false.
+    Este comando lo podemos lanzar cuando queremos hacer un pull y hay conflictos en la rama este pueda como primera opcion tome el merge para poder resolver conflictos entre ramas.
 
     #asignar a vsc como editor de conf de git
     6.- git config --global core.editor "code --wait". Siempre en vsc se abrira el archivo de confg global o a nivel de proyectos. Puede ser cualquier editor de codigo como atom, php storm etc etc solo cambiamos el code por el nombre del editor de código.
@@ -240,3 +242,36 @@
 
   # Muestra todo ramas, fusiones commits etc pero con los graficos parecido github.
   git log --oneline --graph --all
+
+! RESETEO DEL HISTORIAL !.- 
+
+# nos muestra el listado de archivos nuevos (untracked), borrados o editados
+git status
+
+# borra HEAD
+git reset --soft
+
+# borra HEAD y Staging
+git reset --mixed
+
+# borra todo: HEAD, Staging, y Working directory.
+git reset --hard
+
+# deshace todos los cambios después del coomit indicado, preservando los cambios localmente.
+git reset id-commit
+
+# desecha todo el historial y regresa al commit especificado
+git reset --hard id-commit
+
+! Reseteo de un repositorio !.- Nos sirve para cuando queremos eliminar el historial y queremos que nuestro repo parezca nuevo, no es una práctica muy usual. Pasos:
+
+- cd carpeta-repo
+- mv .git/config ~/saved_git_config
+- rm -rf .git
+- git init
+- git branch -M main
+- git add .
+- git commit -m "message"
+- mv ~/saved_git_config .git/config
+- git push --force origin main
+
