@@ -180,7 +180,7 @@
         git merge nombre_rama_que_tiene_los_cambios_a_pasar
     3) Gacer un git push -u origin main para enviar los cambios.
 
-  ! Agregar un cambi más al último commit !.- Esto nos sirve en el caso que nosotros nos hayamos olvidado un línea de código en el último commit, y es común que hagamos un nuevo commit siempre que queremos hacer esto, pero existe un comando que nos permite agregar algo más de código al último commit sin necesidad de hacer otro commit ejm => :
+  ! CAMBIOS COMMIT !.- Esto nos sirve en el caso que nosotros nos hayamos olvidado un línea de código en el último commit, y es común que hagamos un nuevo commit siempre que queremos hacer esto, pero existe un comando que nos permite agregar algo más de código al último commit sin necesidad de hacer otro commit ejm => :
 
   - git commit --amend --no-edit.
   Este comando edita el contenido pero no edita el mensaje del último commit.
@@ -201,3 +201,6 @@
      - git add .
      - git commit -m "new_message"
      - git push
+
+    La mejor manera de manejar este amend, es cuando nosotros no hayamos hecho el push al remoto, es decir cuando hacemos el commit que este permanece en local.
+    Cuando nosotros ya hemos hecho un push lo mas recomendable es mejor crear otro commit y un nuevo push sin el amend porque si no da conflictos siempre porque estamos intentando modificar un commit ya existente en remoto. El amend se usa siemore cuando los cambios los tenemos en local.
