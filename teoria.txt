@@ -190,3 +190,14 @@
 
   - git reset --hard HEAD~1.- Este regresa al último commit que se haya dado si queremos descratar los cambios.
 
+  Pasos de como hacer el amend:
+    1) Hacer el cambio en nuestro código.
+    2) Luego hacer un git add . para agregar esos cambios al stage.
+
+    3) Lanzamos el git commit --amend cuakquiera de los dos comandos que vimos.
+     4) Pero cabe recalcar que cuando usamos nostros el amend, como estamos queriendo hacer un cambio al commit ya hecho debemos de antes de hacer un push hacer un pull para traernos los cambios y veremos que vamos a tener conflictos en la rama porque hemos tocado el mismo commit por ende el mismo archivo hemos hecho el cambio. Tenemos que resolver los conflictos de la rama teniendo en cuenta los colores, cuando hay conflictos siempre el color verde es commit que esta llegando y el azul es como ya estaba antes el archivo. Casi siempre debemos de hacer primero un pull para poder nosotros traer esos cambio y poder arreglar conflictos.
+
+     5) Como nosotros ya hicimos el push del primer commit que luego modificamos dan estos errores, entonces no nos queda otra que agregar un nuevo commit =>
+     - git add .
+     - git commit -m "new_message"
+     - git push
