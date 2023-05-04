@@ -13,7 +13,7 @@
       Esto activa los colores en la terminal.
 
     5.- git config --list
-    6.- git config pull.rebase false.
+    6.- git config --global pull.rebase false.
     Este comando lo podemos lanzar cuando queremos hacer un pull y hay conflictos en la rama este pueda como primera opcion tome el merge para poder resolver conflictos entre ramas.
 
     #asignar a vsc como editor de conf de git
