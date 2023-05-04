@@ -334,7 +334,7 @@ Una etiqueta no es más que un commit nuevo
 
 1) Forkea el repositorio en el que quieras colaborar, para hacerlo, sigue las instrucciones de este enlace.
 
-2) Una vez forkeado el repositorio en tu cuenta de GitHub, clónalo en tu equipo de cómputo.
+2) Una vez forkeado el repositorio en tu cuenta de GitHub, clónalo en tu equipo de cómputo. Siempre en el pryecto forkeado debemos de agregar el config --local del user.name y user.email.
 
 3)En el repositorio local hay que configurar los orígenes remotos de tu nueva copía para tener ambos remotos, los originales (origin) y los de tu copia, para hacerlo, sigue las instrucciones de este enlace.
 
